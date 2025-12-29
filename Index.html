@@ -7,44 +7,34 @@
 </head>
 <body>
 
-<div class="container">
+  <div class="container">
+    <h1>AI HR Assessment Platform</h1>
+    <p class="subtitle">Smart hiring powered by AI</p>
 
-  <h1>AI HR Assessment Platform</h1>
-  <p class="subtitle">Smart Hiring with AI Evaluation</p>
+    <div class="card">
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="tel" id="phone" placeholder="Phone Number">
+      <input type="text" id="regid" placeholder="Registration ID">
 
-  <!-- LOGIN -->
-  <div class="card">
-    <h2>Candidate Login</h2>
+      <select id="domain">
+        <option value="">Select Your Domain</option>
+        <option>HR Services</option>
+        <option>Finance</option>
+        <option>Software Developer</option>
+        <option>Frontend Developer</option>
+        <option>Backend Developer</option>
+        <option>Business Analyst</option>
+        <option>Management Services</option>
+      </select>
 
-    <input type="text" id="name" placeholder="Full Name">
-    <input type="text" id="phone" placeholder="Phone Number">
-    <input type="text" id="regid" placeholder="Registration ID">
+      <button onclick="startTest()">Start Assessment</button>
+    </div>
 
-    <select id="domain">
-      <option value="">Select Your Domain</option>
-      <option>HR Services</option>
-      <option>Finance</option>
-      <option>Company Secretary</option>
-      <option>Software Developer</option>
-      <option>Frontend Developer</option>
-      <option>Backend Developer</option>
-      <option>Software Tester</option>
-      <option>Business Analyst</option>
-      <option>Management Services</option>
-    </select>
-
-    <button onclick="startTest()">Start Assessment</button>
+    <p id="status"></p>
   </div>
-
-  <!-- STATUS -->
-  <div class="card hidden" id="statusBox">
-    <h2>Assessment Status</h2>
-    <p id="statusText"></p>
-  </div>
-
-</div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
 
