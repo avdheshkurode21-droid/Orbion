@@ -1,60 +1,62 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(120deg, #1a1a1a, #2c2c2c);
-  color: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(120deg, #0078d4, #002050);
+  height: 100vh;
   margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
 }
 
 .container {
-  max-width: 420px;
-  margin: 60px auto;
-  padding: 20px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 360px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 5px;
+  color: #002050;
 }
 
 .subtitle {
   text-align: center;
-  color: #aaa;
-  margin-bottom: 30px;
+  color: #555;
+  margin-bottom: 25px;
 }
 
-.card {
-  background: #111;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
-
-input, select {
+.card input,
+.card select {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
   border-radius: 6px;
-  border: none;
+  border: 1px solid #ccc;
   font-size: 14px;
 }
 
-button {
+.card button {
   width: 100%;
   padding: 12px;
-  background: #4f8cff;
-  border: none;
+  margin-top: 15px;
+  background: #0078d4;
   color: white;
-  font-size: 16px;
+  border: none;
   border-radius: 6px;
+  font-size: 15px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
-button:hover {
-  background: #3a6fe0;
+.card button:hover {
+  background: #005a9e;
 }
 
-.hidden {
-  display: none;
+#status {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
 }
+
